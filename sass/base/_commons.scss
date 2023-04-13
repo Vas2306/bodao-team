@@ -1,0 +1,25 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: $color-bgd;
+  color: $color-text;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+img{
+    display: block;
+}
