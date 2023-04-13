@@ -1,6 +1,7 @@
 body {
   font-family: "Ubuntu", sans-serif;
-  background-color: #17171A;
+  background-color: #000000;
+  background-image: repeating-linear-gradient(0deg, #000000, #000000 10px, #17171A 10px, #17171A 20px);
   color: #FFFFFF;
 }
 
@@ -43,8 +44,19 @@ img {
   overflow: hidden;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
+}
+
+section {
+  outline: 1px solid blue;
+}
+
 .schedule__title {
   text-transform: uppercase;
+  font-weight: 700;
   font-size: 24px;
   line-height: 120%;
 }
@@ -58,6 +70,7 @@ img {
 
 .schedule__period--week {
   margin-left: 64px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 120%;
 }

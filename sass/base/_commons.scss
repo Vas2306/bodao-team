@@ -1,7 +1,12 @@
 body {
   font-family: "Ubuntu", sans-serif;
   background-color: $color-bgd;
-  color: $color-text;
+  background-image: repeating-linear-gradient(0deg,
+        $color-bgd,
+        $color-bgd 10px,
+        $color-bgd-second 10px,
+        $color-bgd-second 20px);
+    color: $color-text;
 }
 h1,
 h2,
@@ -24,3 +29,14 @@ p {
 img{
     display: block;
 }
+// img {
+//   display: block;
+//   max-width: 100%;
+//   height: auto;
+
+//   width: 100%;
+// }
+
+// address {
+//   font-style: normal;
+// }
