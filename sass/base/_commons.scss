@@ -1,11 +1,8 @@
 body {
   font-family: "Ubuntu", sans-serif;
   background-color: $color-bgd;
-  background-image: repeating-linear-gradient(0deg,
-        $color-bgd,
-        $color-bgd 10px,
-        $color-bgd-second 10px,
-        $color-bgd-second 20px);
+  background-image: linear-gradient($color-bgd 50%, $color-bgd-second 50%);
+    background-size: 100% 20px;
     color: $color-text;
 }
 h1,
