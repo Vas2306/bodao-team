@@ -1,0 +1,18 @@
+.header__icon--phone {
+  fill: $color-text;
+}
+.header__icon--geolocation {
+  fill: $color-text;
+}
+.header__number {
+  @include font(700, 16px, 150%);
+  color: inherit;
+}
+
+.header__whatsapp {
+  @include font(400, 10px, 150%);
+  color: inherit;
+}
+.header__address {
+  @include font(500, 13px, 150%);
+}
