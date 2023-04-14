@@ -1,7 +1,28 @@
-// .schedule {}
-
+.schedule {
+  padding-top: 60px;
+}
+.schedule__wrapper{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba($color-strip, $alpha: 0.45);
+  @include tablet {
+  flex-basis: calc((100% - 100px) / 2);
+  }
+}
+.schedule__list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 .schedule__title {
-  text-transform: uppercase;
+  margin-bottom: 40px;
+    text-transform: uppercase;
   @include font(700, 24px, 120%);
 }
 

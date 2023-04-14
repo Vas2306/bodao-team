@@ -30,6 +30,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -47,25 +49,25 @@ img {
 }
 
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid red;
 }
 @media screen and (min-width: 360px) {
   .container {
-    max-width: 360px;
+    max-width: 320px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 728px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1320px) {
   .container {
-    max-width: 1200px;
+    max-width: 1190px;
   }
 }
 
@@ -73,7 +75,47 @@ section {
   outline: 1px solid blue;
 }
 
+.schedule {
+  padding-top: 60px;
+}
+
+.schedule__wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(43, 43, 55, 0.45);
+}
+@media screen and (min-width: 768px) {
+  .schedule__wrapper {
+    -ms-flex-preferred-size: calc((100% - 100px) / 2);
+        flex-basis: calc((100% - 100px) / 2);
+  }
+}
+
+.schedule__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .schedule__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .schedule__title {
+  margin-bottom: 40px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 24px;
