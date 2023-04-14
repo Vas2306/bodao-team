@@ -67,7 +67,7 @@ img {
 }
 @media screen and (min-width: 1320px) {
   .container {
-    max-width: 1190px;
+    max-width: 1290px;
   }
 }
 
@@ -92,6 +92,15 @@ section {
         flex-basis: calc((100% - 100px) / 2);
   }
 }
+@media screen and (min-width: 1320px) {
+  .schedule__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    -ms-flex-preferred-size: calc((100% - 240px) / 3);
+        flex-basis: calc((100% - 240px) / 3);
+  }
+}
 
 .schedule__list {
   display: -webkit-box;
@@ -113,6 +122,11 @@ section {
         flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 1320px) {
+  .schedule__list {
+    gap: 30px;
+  }
+}
 
 .schedule__title {
   margin-bottom: 40px;
@@ -121,12 +135,30 @@ section {
   font-size: 24px;
   line-height: 120%;
 }
+@media screen and (min-width: 768px) {
+  .schedule__title {
+    margin-bottom: 60px;
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .schedule__title {
+    margin-bottom: 100px;
+    font-size: 72px;
+  }
+}
 
 .schedule__period {
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
+}
+@media screen and (min-width: 1320px) {
+  .schedule__period {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .schedule__period--week {
@@ -142,12 +174,22 @@ section {
   font-size: 14px;
   line-height: 150%;
 }
+@media screen and (min-width: 1320px) {
+  .schedule__description {
+    font-size: 18px;
+  }
+}
 
 .schedule__price {
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 30px;
   line-height: 120%;
+}
+@media screen and (min-width: 1320px) {
+  .schedule__price {
+    font-size: 36px;
+  }
 }
 
 .schedule__price--old {
@@ -157,6 +199,11 @@ section {
   font-weight: 700;
   font-size: 18px;
   line-height: 120%;
+}
+@media screen and (min-width: 1320px) {
+  .schedule__price--old {
+    font-size: 24px;
+  }
 }
 
 .button {
@@ -178,6 +225,13 @@ section {
   border-radius: 0px 40px 40px 0px;
   cursor: pointer;
   background-color: #F9BA50;
+}
+@media screen and (min-width: 1320px) {
+  .button {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 118%;
+  }
 }
 
 .schedule__arrow {

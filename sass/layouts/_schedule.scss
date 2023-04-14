@@ -10,6 +10,12 @@
   @include tablet {
   flex-basis: calc((100% - 100px) / 2);
   }
+  @include desktop {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    flex-basis: calc((100% - 240px) / 3);
+  }
 }
 .schedule__list{
   display: flex;
@@ -19,16 +25,31 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+  @include desktop {
+    gap: 30px;
+  }
 }
 .schedule__title {
   margin-bottom: 40px;
     text-transform: uppercase;
   @include font(700, 24px, 120%);
+  @include tablet {
+    margin-bottom: 60px;
+    font-size: 36px;
+  }
+  @include desktop {
+    margin-bottom: 100px;
+    font-size: 72px;
+  }
 }
 
 .schedule__period {
   margin-bottom: 30px;
   @include font(700, 24px, 120%);
+  @include desktop {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 .schedule__period--week {
   margin-left: 64px;
@@ -37,16 +58,25 @@
 .schedule__description {
   margin-bottom: 40px;
   @include font(500, 14px, 150%);
+  @include desktop {
+    font-size: 18px;
+  }
 }
 
 .schedule__price {
   margin-bottom: 30px;
   @include font(700, 30px, 120%);
+  @include desktop {
+    font-size: 36px;
+  }
 }
 .schedule__price--old {
   margin-left: 30px;
   text-decoration-line: line-through;
   @include font(700, 18px, 120%);
+  @include desktop {
+    font-size: 24px;
+  }
 }
 .button {
   display: flex;
@@ -55,10 +85,7 @@
   min-width: 280px;
   height: 50px;
   padding: 0;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 140%;
+  @include font(500,14px,140%);
 
   text-transform: uppercase;
   border: none;
@@ -66,6 +93,9 @@
   border-radius: 0px 40px 40px 0px;
   cursor: pointer;
   background-color: $color-accent;
+  @include desktop {
+    @include font(500,18px,118%);
+  }
 }
 .schedule__arrow {
   margin-left: 74px;
