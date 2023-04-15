@@ -1,0 +1,39 @@
+.instagram {
+  padding-top: 60px;
+  @include tablet {
+    padding-top: 80px;
+  }
+  @include desktop {
+    padding-top: 150px;
+  }
+}
+.instagram__title {
+  margin-bottom: 40px;
+  @include font(700, 24px, 120%);
+  text-transform: uppercase;
+  @include tablet {
+    margin-bottom: 60px;
+    font-size: 36px;
+  }
+  @include desktop {
+    margin-bottom: 100px;
+    font-size: 72px;
+  }
+}
+
+.instagram__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  @include desktop {
+    gap: 30px;
+  }
+}
+
+.instagram__item {
+  width: 100%;
+  width: calc((100% - 20px) / 2);
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
+}
