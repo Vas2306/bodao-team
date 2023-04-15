@@ -26,12 +26,17 @@ p {
 .link {
   text-decoration: none;
   cursor: pointer;
+  color: inherit;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+address {
+  font-style: normal;
 }
 
 .visually-hidden {
@@ -75,19 +80,28 @@ section {
   outline: 1px solid blue;
 }
 
-.header__icon--phone {
-  fill: #FFFFFF;
-}
-
+.header__icon--phone,
 .header__icon--geolocation {
   fill: #FFFFFF;
+  width: 20px;
+}
+@media screen and (min-width: 768px) {
+  .header__icon--phone,
+.header__icon--geolocation {
+    width: 25px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .header__icon--phone,
+.header__icon--geolocation {
+    width: 40px;
+  }
 }
 
 .header__number {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
-  color: inherit;
 }
 
 .header__whatsapp {
@@ -323,5 +337,11 @@ section {
 @media screen and (min-width: 1320px) {
   .instagram__item {
     width: calc((100% - 60px) / 3);
+  }
+}
+
+@media screen and (max-width: 1319px) {
+  .instagram__item-end {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
