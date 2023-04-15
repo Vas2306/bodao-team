@@ -1,25 +1,100 @@
+.header {
+  padding-top: 31px;
+  padding-bottom: 41px;
+  @include tablet {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+  @include desktop {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+}
 .header__icon--phone,
-.header__icon--geolocation
-{
+.header__icon--geolocation {
   fill: $color-text;
   width: 20px;
-  @include tablet{
+  @include tablet {
     width: 25px;
   }
-  @include desktop{
+  @include desktop {
     width: 40px;
   }
 }
-
+.header__icon--phone {
+  margin-right: 10px;
+  @include desktop {
+    margin-right: 15px;
+  }
+}
+.header__icon--geolocation {
+  margin-right: 10px;
+  @include desktop {
+    margin-right: 15px;
+  }
+}
 .header__number {
   @include font(700, 16px, 150%);
- 
+  @include desktop {
+    font-size: 20px;
+  }
 }
-
+.header__wrap--phone {
+  display: flex;
+  align-items: center;
+}
 .header__whatsapp {
   @include font(400, 10px, 150%);
   color: inherit;
+  @include desktop {
+    font-size: 12px;
+  }
+}
+
+nav {
+  position: relative;
 }
 .header__address {
+  @include tablet {
+    position: absolute;
+    top: 27px;
+    left: 145px;
+  }
+  @include desktop {
+    top: 26px;
+    left: 413px;
+  }
+}
+.header__address--item {
   @include font(500, 13px, 150%);
+  @include tablet {
+    font-size: 14px;
+  }
+  @include desktop {
+    font-size: 16px;
+  }
+}
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.header__logo {
+  width: 48px;
+  @include tablet {
+    width: 100px;
+  }
+  @include desktop {
+    width: 110px;
+  }
+}
+
+.header__address--link {
+  display: flex;
+  align-items: center;
+}
+.header__address--item:first-child {
+  margin-bottom: 5px;
 }
