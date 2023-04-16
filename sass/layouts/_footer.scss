@@ -1,14 +1,23 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 23px;
-  @include tablet{
+  @include tablet {
     padding-top: 80px;
   }
+  @include desktop {
+    padding-top: 150px;
+    padding-bottom: 139px;
+    position: relative;
+  }
 }
+
 .footer__social {
-    @include tablet {
-            width: calc((100% - 20px) / 2);
-        }
+  @include tablet {
+    width: calc((100% - 20px) / 2);
+  }
+  @include desktop {
+    width: 410px;
+  }
 }
 
 .footer__logo {
@@ -17,19 +26,22 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
-  @include tablet{
+  @include tablet {
     margin-left: 0;
     margin-bottom: 20px;
   }
-
 }
 
 .footer__description {
   margin-bottom: 40px;
   @include font(500, 14px, 150%);
-  @include tablet{
+  @include tablet {
     font-size: 16px;
     margin-bottom: 65px;
+  }
+  @include desktop {
+    font-size: 18px;
+    margin-bottom: 40px;
   }
 }
 
@@ -38,30 +50,25 @@
   justify-content: center;
   gap: 44px;
   margin-bottom: 41px;
-  @include tablet{
+  @include tablet {
     justify-content: flex-start;
   }
-}
-
-.footer__social--item {
-   
-
 }
 
 .footer__social--link {
   fill: $color-text;
   display: block;
-  
+
   transition: fill 250ms $timing-function, transform 250ms $timing-function;
 }
 
 .footer__social--logo {
-    width: 23px;
+  width: 23px;
   height: 23px;
-  @include tablet{
-  width: 25px;
-  height: 25px;
-}
+  @include tablet {
+    width: 25px;
+    height: 25px;
+  }
 }
 .footer__social--link:hover,
 .footer__social--link:focus {
@@ -76,24 +83,39 @@
 }
 
 .footer__nav--title {
+  margin-top: 40px;
+  margin-bottom: 63px;
+  @include font(500, 20px, 120%);
 }
 
-.footer__nav--list {
+.footer__nav--link {
+  @include font(400, 18px, 120%);
+  transition: color 250ms $timing-function;
 }
-
-.footer__nav--item {
+.footer__nav--link:hover,
+.footer__nav--link:focus {
+  color: $color-accent;
+}
+.footer__nav--item:not(:last-child) {
+  margin-bottom: 30px;
 }
 .footer__address {
   margin-bottom: 40px;
-  @include tablet{
+  @include tablet {
     width: calc((100% - 20px) / 2);
   }
+  @include desktop {
+    width: 410px;
+  }
 }
-.footer__wrapper{
-@include tablet{
+.footer__wrapper {
+  @include tablet {
     display: flex;
     gap: 20px;
-}
+  }
+  @include desktop {
+    gap: 149px;
+  }
 }
 .footer__wrap::after {
   display: block;
@@ -101,6 +123,9 @@
   width: 100%;
   height: 1px;
   background-color: rgba($color-text, $alpha: 0.5);
+  @include desktop {
+    display: none;
+  }
 }
 .footer__address--title {
   @media screen and (max-width: 359px) {
@@ -111,11 +136,6 @@
   @include font(500, 20px, 120%);
 }
 
-.footer__address--list {
-}
-
-.footer__address--item {
-}
 .footer__address--item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -129,32 +149,44 @@
 .footer__address--link {
   @include font(700, 14px, 114%);
   transition: color 250ms $timing-function;
-  @include tablet{
+  @include tablet {
     font-size: 16px;
   }
 }
 .footer__address--link:hover,
 .footer__address--link:focus {
-    color: $color-accent;
+  color: $color-accent;
 }
 .footer__address--address:not(:last-child) {
   margin-bottom: 15px;
+  @include desktop {
+    margin-bottom: 36px;
+  }
 }
-.footer__policy--list{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
+.footer__policy--list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 .footer__policy:last-child {
   margin-top: 20px;
   @include font(400, 16px, 150%);
-  @include tablet{
-   margin-top: 0;
+  @include tablet {
+    margin-top: 0;
+  }
+  @include desktop {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-650px);
+    top: 514px;
   }
 }
-.footer__policy:first-child{
-    @media screen and (max-width:767px){
-      display: none;  
-    }
+.footer__policy:first-child {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
 }
