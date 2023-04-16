@@ -1,11 +1,46 @@
 .trainers {
   padding-top: 60px;
+@include tablet{
+  padding-top: 79px;
 }
+}
+.trainers__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 
+  @include tablet {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  @include desktop {
+    gap: 30px;
+  }
+}
+.trainers__item{
+  @include tablet{
+     width: calc(100% / 2);
+  }
+ 
+}
+.trainers__item:first-child .trainers__caption{
+  @include desktop{
+    display: none;
+  }
+}
 .trainers__title {
   margin-bottom: 40px;
   @include font(700, 24px, 120%);
   text-transform: uppercase;
+  @include tablet{
+    margin-bottom: 60px;
+    font-size: 36px;
+  }
+  @include desktop{
+    margin-bottom: 100px;
+    font-size: 72px;
+  }
 }
 
 .trainers__subtitle {
@@ -14,7 +49,12 @@
   margin-top: -18px;
   @include font(700, 30px, 120%);
   text-transform: uppercase;
-
+@include tablet{
+  font-size: 36px;
+}
+@include desktop{
+  font-size: 64px;
+}
 }
 .trainers__subtitle>span{
 color: $color-text;
@@ -30,4 +70,10 @@ content: attr(data-text);
 }
 .trainers__caption {
   @include font(500, 14px, 150%);
+  @include tablet{
+  font-size: 16px;
+  }
+  @include desktop{
+    font-size: 18px;
+  }
 }
