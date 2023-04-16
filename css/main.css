@@ -250,9 +250,42 @@ nav {
   line-height: 120%;
   text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+  .kinds__title {
+    margin-bottom: 60px;
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .kinds__title {
+    margin-bottom: 100px;
+    font-size: 72px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .kinds__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .kinds__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 
 .kinds__item {
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .kinds__item {
+    width: 50%;
+  }
 }
 
 .kinds__caption {
@@ -267,6 +300,12 @@ nav {
   color: #FFFFFF;
   -webkit-text-stroke: 3px transparent;
   -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+@media screen and (min-width: 1320px) {
+  .kinds__caption {
+    font-size: 48px;
+  }
 }
 
 .kinds__caption::before {
@@ -275,6 +314,7 @@ nav {
   left: 0;
   right: 0;
   -webkit-text-stroke: 1px #FFFFFF;
+  text-align: center;
 }
 
 .schedule {
