@@ -1,0 +1,38 @@
+.kinds {
+  padding-top: 60px;
+}
+
+.kinds__title {
+  margin-bottom: 40px;
+  @include font(700, 24px, 120%);
+  text-transform: uppercase;
+}
+
+.kinds__list {
+}
+
+.kinds__item {
+    position: relative;
+}
+
+.kinds__caption {
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include font(700, 36px, 120%);
+
+  color: $color-text;
+  -webkit-text-stroke: 3px transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.kinds__caption::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-text-stroke: 1px $color-text;
+}
+
+
