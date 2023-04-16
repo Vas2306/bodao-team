@@ -1,0 +1,33 @@
+.trainers {
+  padding-top: 60px;
+}
+
+.trainers__title {
+  margin-bottom: 40px;
+  @include font(700, 24px, 120%);
+  text-transform: uppercase;
+}
+
+.trainers__subtitle {
+    position: relative;
+  margin-bottom: 20px;
+  margin-top: -18px;
+  @include font(700, 30px, 120%);
+  text-transform: uppercase;
+
+}
+.trainers__subtitle>span{
+color: $color-text;
+    -webkit-text-stroke: 3px transparent;
+    -webkit-text-fill-color: transparent;    
+}
+.trainers__subtitle>span::before{
+content: attr(data-text);
+    position: absolute;
+    left: 0;
+    right: 0;
+    -webkit-text-stroke: 1px $color-text;
+}
+.trainers__caption {
+  @include font(500, 14px, 150%);
+}

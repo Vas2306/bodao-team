@@ -239,6 +239,48 @@ nav {
   margin-bottom: 5px;
 }
 
+.trainers {
+  padding-top: 60px;
+}
+
+.trainers__title {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.trainers__subtitle {
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: -18px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.trainers__subtitle > span {
+  color: #FFFFFF;
+  -webkit-text-stroke: 3px transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.trainers__subtitle > span::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-text-stroke: 1px #FFFFFF;
+}
+
+.trainers__caption {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+}
+
 .kinds {
   padding-top: 60px;
 }
