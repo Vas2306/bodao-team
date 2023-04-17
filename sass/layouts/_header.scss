@@ -85,6 +85,8 @@ nav {
 }
 
 .header__logo {
+  position: relative;
+    z-index: 5;
   width: 48px;
   @include tablet {
     width: 100px;
