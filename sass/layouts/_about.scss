@@ -1,0 +1,79 @@
+.about {
+    padding-top: 80px;
+}
+
+
+
+.about__images {
+  width: 320px;
+  height: 371px;  
+  position: relative;
+  background-image: url(../images/about-mob-min.png);
+  background-size: 320px 300px;
+  background-repeat: no-repeat;
+
+  @include retina{
+    background-image: url(../images/about-mob@2x-min.png);
+  }  
+@include tablet{
+    width: calc((100% - 20px) / 2);
+    height: 612px;
+    background-image: url(../images/about-tablet-min.png);
+    background-size: 354px 436px;
+}
+}
+.about__circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 181px;
+    left: 152px;
+    border: 10px solid transparent;
+    outline: 2px solid $color-text;
+    @include tablet{
+        top: 363px;
+        left: 137px;
+    }
+}
+.about__title--mob {
+    margin-bottom: 40px;
+    @include font(700, 24px, 120%);
+    text-transform: uppercase;
+    @include tablet{
+        display: none;
+    }
+}
+.about__container{
+    @include tablet{
+      display: flex;
+    gap: 20px;   
+    }
+   
+}
+.about__description {
+    @include tablet {
+            width: calc((100% - 20px) / 2);
+        }
+}
+
+.about__title {
+  
+@media screen and (max-width:767px) {
+    display: none;
+}
+margin-bottom: 40px;
+text-transform: uppercase;
+@include font(700, 36px, 120%);
+}
+
+.about__text {
+    height: 144px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    @include font (500, 14px, 170%);
+    @include tablet{
+        height: 297px;
+        font-size: 16px;
+    }
+}

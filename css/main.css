@@ -324,9 +324,9 @@ nav {
   margin-left: auto;
   margin-right: auto;
   padding-top: 9px;
+  background-image: url(../images/hero-mob-min.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../images/hero-mob-min.png);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -451,6 +451,105 @@ nav {
   .hero__description {
     width: 410px;
     font-size: 18px;
+  }
+}
+
+.about {
+  padding-top: 80px;
+}
+
+.about__images {
+  width: 320px;
+  height: 371px;
+  position: relative;
+  background-image: url(../images/about-mob-min.png);
+  background-size: 320px 300px;
+  background-repeat: no-repeat;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .about__images {
+    background-image: url(../images/about-mob@2x-min.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__images {
+    width: calc((100% - 20px) / 2);
+    height: 612px;
+    background-image: url(../images/about-tablet-min.png);
+    background-size: 354px 436px;
+  }
+}
+
+.about__circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 181px;
+  left: 152px;
+  border: 10px solid transparent;
+  outline: 2px solid #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .about__circle {
+    top: 363px;
+    left: 137px;
+  }
+}
+
+.about__title--mob {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .about__title--mob {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__description {
+    width: calc((100% - 20px) / 2);
+  }
+}
+
+.about__title {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+}
+@media screen and (max-width: 767px) {
+  .about__title {
+    display: none;
+  }
+}
+
+.about__text {
+  height: 144px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 170%;
+}
+@media screen and (min-width: 768px) {
+  .about__text {
+    height: 297px;
+    font-size: 16px;
   }
 }
 

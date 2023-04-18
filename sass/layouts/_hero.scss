@@ -2,10 +2,10 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 9px;
-  background-repeat: no-repeat;
-  background-position: center;
+  
   background-image: url(../images/hero-mob-min.png);
-
+background-repeat: no-repeat;
+  background-position: center;
   @include retina {
     background-image: url(../images/hero-mob@2x-min.png);
   }
