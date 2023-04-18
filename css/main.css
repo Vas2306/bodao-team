@@ -81,7 +81,6 @@ svg {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 360px) {
   .container {
@@ -97,10 +96,6 @@ svg {
   .container {
     max-width: 1290px;
   }
-}
-
-section {
-  outline: 1px solid blue;
 }
 
 .header {
@@ -457,6 +452,11 @@ nav {
 .about {
   padding-top: 80px;
 }
+@media screen and (min-width: 1320px) {
+  .about {
+    padding-top: 130px;
+  }
+}
 
 .about__images {
   width: 320px;
@@ -479,6 +479,24 @@ nav {
     background-size: 354px 436px;
   }
 }
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .about__images {
+    background-image: url(../images/about-tablet@2x-min.png);
+  }
+}
+@media screen and (min-width: 1320px) {
+  .about__images {
+    width: calc((100% - 119px) / 2);
+    height: 953px;
+    background-image: url(../images/about-desktop-min.png);
+    background-size: 650px 800px;
+  }
+}
+@media screen and (min-width: 1320px) and (min-device-pixel-ratio: 2), screen and (min-width: 1320px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1320px) and (min-resolution: 192dpi), screen and (min-width: 1320px) and (min-resolution: 2dppx) {
+  .about__images {
+    background-image: url(../images/about-desktop@2x-min.png);
+  }
+}
 
 .about__circle {
   width: 150px;
@@ -494,6 +512,15 @@ nav {
   .about__circle {
     top: 363px;
     left: 137px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .about__circle {
+    width: 384px;
+    height: 384px;
+    top: 493px;
+    left: 239px;
+    border: 18px solid transparent;
   }
 }
 
@@ -518,10 +545,20 @@ nav {
     gap: 20px;
   }
 }
+@media screen and (min-width: 1320px) {
+  .about__container {
+    gap: 119px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .about__description {
     width: calc((100% - 20px) / 2);
+  }
+}
+@media screen and (min-width: 1320px) {
+  .about__description {
+    width: calc((100% - 119px) / 2);
   }
 }
 
@@ -537,6 +574,13 @@ nav {
     display: none;
   }
 }
+@media screen and (min-width: 1320px) {
+  .about__title {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 72px;
+  }
+}
 
 .about__text {
   height: 144px;
@@ -550,6 +594,13 @@ nav {
   .about__text {
     height: 297px;
     font-size: 16px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .about__text {
+    height: 400px;
+    margin-bottom: 90px;
+    font-size: 18px;
   }
 }
 
