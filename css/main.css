@@ -279,6 +279,88 @@ nav {
   color: #F9BA50;
 }
 
+.btn-primary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 277px;
+  height: 55px;
+  padding: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 117%;
+  text-transform: uppercase;
+  color: inherit;
+  background-color: #F9BA50;
+  border-radius: 0px 40px 40px 0px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: 1px 1px 0 rgb(226, 221, 74), -1px -1px 0 rgb(134, 145, 65), 1px -1px 0 rgb(111, 127, 40), -1px 1px 0 rgb(215, 249, 77), 4px 4px 8px rgb(132, 127, 38);
+          box-shadow: 1px 1px 0 rgb(226, 221, 74), -1px -1px 0 rgb(134, 145, 65), 1px -1px 0 rgb(111, 127, 40), -1px 1px 0 rgb(215, 249, 77), 4px 4px 8px rgb(132, 127, 38);
+}
+
+.btn__arrow {
+  margin-right: 54px;
+  fill: #FFFFFF;
+}
+
+.hero__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 360px;
+  height: auto;
+  background-repeat: no-repeat;
+  background-image: url(../images/hero-mob-min.png);
+  background-position: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__wrapper {
+    background-image: url(../images/hero-mob@2x-min.png);
+  }
+}
+
+.hero__subtitle {
+  padding-top: 9px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+}
+
+.hero__titles {
+  margin-bottom: 30px;
+}
+
+.hero__titles--component {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.hero__description {
+  margin-bottom: 60px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+}
+
 .trainers {
   padding-top: 60px;
 }

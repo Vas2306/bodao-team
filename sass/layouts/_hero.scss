@@ -1,0 +1,44 @@
+.hero {
+ 
+}
+.hero__wrapper{
+    margin-left: auto;
+    margin-right: auto; 
+    width: 360px;
+    height: auto;
+    background-repeat: no-repeat;
+//    background-size: cover;
+    // height: 392px;
+    background-image: url(../images/hero-mob-min.png);
+    // background-size: 360px 392px;
+    background-position: center;
+    @include retina{
+        background-image: url(../images/hero-mob@2x-min.png);
+    }
+
+}
+.container {}
+
+.hero__subtitle {
+   padding-top: 9px;
+    margin-bottom: 30px;
+    @include font(500, 14px, 130%);
+}
+
+.hero__titles {
+   margin-bottom: 30px;
+}
+
+.hero__titles--component {
+
+    @include font(700, 44px, 120%);
+    text-transform: uppercase; 
+}
+.hero__down {}
+
+.hero__description {
+    margin-bottom: 60px;
+    @include font(500, 14px, 120%);
+}
+
+.btn-hero {}
