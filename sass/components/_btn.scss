@@ -13,18 +13,22 @@ text-transform: uppercase;
     border-radius: 0px 40px 40px 0px;
     border: none;
 
-
-   
-
     cursor: pointer;
-transition: transform 250ms $timing-function, box-shadow 250ms $timing-function;
+transition: background-color 250ms $timing-function, color 250ms $timing-function;
 }
 .btn-primary:hover,
 .btn-primary:focus{
-    transform: scale(1.03);
-box-shadow: 1px 1px 0 rgba(226, 221, 74, 1), -1px -1px 0 rgba(134, 145, 65, 1), 1px -1px 0 rgba(111, 127, 40, 1), -1px 1px 0 rgba(215, 249, 77, 1), 4px 4px 8px rgba(132, 127, 38, 1);
+background-color: $color-text;
+color: $color-bgd-second;
+fill: $color-bgd-second;
 }
 .btn__arrow{
     margin-right: 54px;
     fill: $color-text;
+    transition: fill 250ms $timing-function;
+}
+.btn-primary:hover .btn__arrow,
+.btn-primary:focus .btn__arrow{
+    
+    fill: $color-bgd-second;
 }

@@ -94,6 +94,7 @@ outline: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 0px 40px 40px 0px;
   cursor: pointer;
   background-color: $color-accent;
+  transition: background-color 250ms $timing-function, color 250ms $timing-function;
   @include desktop {
     @include font(500,18px,118%);
   }
@@ -102,5 +103,16 @@ outline: 1px solid rgba(255, 255, 255, 0.2);
   margin-left: 74px;
   margin-right: 20px;
   fill: $color-text;
+    transition: fill 250ms $timing-function;
 }
+.button:hover,
+.button:focus {
+  background-color: $color-text;
+  color: $color-bgd-second;
+  fill: $color-bgd-second;
+}
+.button:hover .schedule__arrow,
+.button:focus .schedule__arrow {
 
+  fill: $color-bgd-second;
+}

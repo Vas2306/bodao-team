@@ -144,6 +144,8 @@ svg {
 
 .header__icon--geolocation {
   margin-right: 10px;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1320px) {
   .header__icon--geolocation {
@@ -274,6 +276,11 @@ nav {
   color: #F9BA50;
 }
 
+.header__address--link:hover .header__icon--geolocation,
+.header__address--link:focus .header__icon--geolocation {
+  fill: #F9BA50;
+}
+
 .btn-primary {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,23 +303,27 @@ nav {
   border-radius: 0px 40px 40px 0px;
   border: none;
   cursor: pointer;
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
-  -webkit-box-shadow: 1px 1px 0 rgb(226, 221, 74), -1px -1px 0 rgb(134, 145, 65), 1px -1px 0 rgb(111, 127, 40), -1px 1px 0 rgb(215, 249, 77), 4px 4px 8px rgb(132, 127, 38);
-          box-shadow: 1px 1px 0 rgb(226, 221, 74), -1px -1px 0 rgb(134, 145, 65), 1px -1px 0 rgb(111, 127, 40), -1px 1px 0 rgb(215, 249, 77), 4px 4px 8px rgb(132, 127, 38);
+  background-color: #FFFFFF;
+  color: #17171A;
+  fill: #17171A;
 }
 
 .btn__arrow {
   margin-right: 54px;
   fill: #FFFFFF;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary:hover .btn__arrow,
+.btn-primary:focus .btn__arrow {
+  fill: #17171A;
 }
 
 .hero {
@@ -949,6 +960,8 @@ nav {
   border-radius: 0px 40px 40px 0px;
   cursor: pointer;
   background-color: #F9BA50;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1320px) {
   .button {
@@ -962,6 +975,20 @@ nav {
   margin-left: 74px;
   margin-right: 20px;
   fill: #FFFFFF;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover,
+.button:focus {
+  background-color: #FFFFFF;
+  color: #17171A;
+  fill: #17171A;
+}
+
+.button:hover .schedule__arrow,
+.button:focus .schedule__arrow {
+  fill: #17171A;
 }
 
 .instagram {

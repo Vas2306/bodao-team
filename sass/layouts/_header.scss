@@ -29,6 +29,7 @@
 }
 .header__icon--geolocation {
   margin-right: 10px;
+    transition: fill 250ms $timing-function;
   @include desktop {
     margin-right: 15px;
   }
@@ -111,4 +112,8 @@ nav {
 .header__whatsapp:hover,
 .header__whatsapp:focus{
   color: $color-accent;
+}
+.header__address--link:hover .header__icon--geolocation,
+.header__address--link:focus .header__icon--geolocation{
+  fill:$color-accent;
 }
