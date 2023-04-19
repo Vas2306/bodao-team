@@ -53,8 +53,11 @@ outline: 1px solid rgba(255, 255, 255, 0.2);
   }
 }
 .schedule__period--week {
-  margin-left: 35px;
+  margin-left: 10px;
   @include font(400, 16px, 120%);
+@include tablet{
+  margin-left: 30px;
+}
 }
 .schedule__description {
   margin-bottom: 40px;
